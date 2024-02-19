@@ -1,0 +1,9 @@
+-Añadir la barra de carga (que imprime la biblioteca por pantalla)
+a la interfaz
+
+-Hacer que no haga falta tener el png de boton en la misma carpeta
+para que aparezca (incurstarlo en el exe o algo)
+
+-Poner un icono personalizado al exe
+
+-Meter miniaturas reales en vez de un frame random xd
