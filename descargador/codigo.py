@@ -65,7 +65,7 @@ def descargar():
             ruta_absoluta = os.path.abspath(ruta)
             video = VideoFileClip(ruta_absoluta)
             rutamp3=ruta[:len(ruta)-4]+ ".mp3"
-            video.audio.write_audiofile(rutamp3)
+            video.audio.write_audiofile(rutamp3,ffmpeg_params=["-id3v2_version", "3"]) #ffmpeg_params=["-id3v2_version", "3"] sirve para que la versión de la etiqueta sea id3v2.3 y que el explorador de windows muestre las miniaturas
             
             # Obtener el fotograma en el segundo 5
             frame = video.get_frame(10)
